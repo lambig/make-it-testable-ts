@@ -1,0 +1,53 @@
+{
+  "name": "make-it-testable-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "tsc-watch",
+    "test": "jest",
+    "test-coverage": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lambig/make-it-testable-ts.git"
+  },
+  "author": "Lambig",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lambig/make-it-testable-ts/issues"
+  },
+  "homepage": "https://github.com/lambig/make-it-testable-ts#readme",
+  "devDependencies": {
+    "@types/jest": "^27.0.3",
+    "@types/node": "^16.11.11",
+    "jest": "^27.4.3",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^27.0.7",
+    "ts-node": "^10.4.0",
+    "ts-node-dev": "^1.1.8",
+    "tsc-watch": "^4.5.0",
+    "typescript": "^4.5.2"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    },
+    "globals": {
+      "ts-jest": {
+        "tsConfig": "tsconfig.json"
+      }
+    },
+    "testMatch": [
+      "**/test/**/*.test.ts"
+    ]
+  },
+  "dependencies": {
+    "date-utils": "^1.2.21"
+  }
+}
